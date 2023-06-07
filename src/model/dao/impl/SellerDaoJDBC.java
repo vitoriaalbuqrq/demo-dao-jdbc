@@ -103,7 +103,7 @@ public class SellerDaoJDBC implements SellerDao{
 			int rows = st.executeUpdate();
 			
 			if (rows == 0) {
-				throw new DbException("Id error. No rows affected!");
+				throw new DbException("Id not found. No rows affected!");
 			}
 		}
 		catch (SQLException e) {
